@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="r3Q-61-Juj">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Fja-Y3-Zwz">
+            <objects>
+                <navigationController id="r3Q-61-Juj" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nBf-BT-avx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="VXu-11-OVt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vpq-z8-cBr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-902" y="137"/>
+        </scene>
+        <!--First Example View-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="FirstExampleView" customModule="RxPresentation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="8Sv-B6-WEo">
+                                <rect key="frame" x="16" y="60" width="288" height="120.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Rbj-b4-kFO">
+                                        <rect key="frame" x="0.0" y="0.0" width="136" height="120.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bwg-NR-mqQ">
+                                                <rect key="frame" x="0.0" y="0.0" width="136" height="100"/>
+                                                <color key="tintColor" name="RxPurple"/>
+                                                <state key="normal" image="ic_signal">
+                                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <state key="highlighted" image="ic_signal_sel"/>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lab_1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P3G-fV-1Cv">
+                                                <rect key="frame" x="0.0" y="100" width="136" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Nhv-hj-UFl">
+                                        <rect key="frame" x="152" y="0.0" width="136" height="120.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uNp-BC-O8k">
+                                                <rect key="frame" x="0.0" y="0.0" width="136" height="100"/>
+                                                <color key="tintColor" name="RxPurple"/>
+                                                <state key="normal" image="ic_signal">
+                                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <state key="highlighted" image="ic_signal_sel"/>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lab_2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Rm-Pe-ZiL">
+                                                <rect key="frame" x="0.0" y="100" width="136" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMP-TV-E2S">
+                                <rect key="frame" x="252" y="514" width="52" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="pyN-sp-TiM"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <inset key="contentEdgeInsets" minX="16" minY="8" maxX="16" maxY="8"/>
+                                <state key="normal" image="forward.end.fill" catalog="system"/>
+                                <state key="highlighted">
+                                    <color key="titleColor" name="RxPurple"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Laboratory logs:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ciA-eS-2eE">
+                                <rect key="frame" x="16" y="338.5" width="288" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="egW-M6-BfL">
+                                <rect key="frame" x="16" y="375" width="288" height="123"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tlB-79-nIG">
+                                <rect key="frame" x="110" y="222.5" width="100" height="100"/>
+                                <color key="tintColor" name="RxPurple"/>
+                                <state key="normal" image="ic_radio"/>
+                                <state key="selected" image="ic_radio_sel"/>
+                                <state key="highlighted" image="ic_radio_sel"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="DMP-TV-E2S" secondAttribute="bottom" constant="16" id="C1r-7K-sSX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DMP-TV-E2S" secondAttribute="trailing" constant="16" id="EXf-Bm-qag"/>
+                            <constraint firstItem="egW-M6-BfL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="FmW-DO-NyT"/>
+                            <constraint firstItem="8Sv-B6-WEo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Hxs-0e-dDU"/>
+                            <constraint firstItem="8Sv-B6-WEo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="Of4-SH-aZI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="egW-M6-BfL" secondAttribute="trailing" constant="16" id="Sst-Gc-shC"/>
+                            <constraint firstItem="tlB-79-nIG" firstAttribute="top" secondItem="8Sv-B6-WEo" secondAttribute="bottom" constant="42" id="TiD-ud-OkO"/>
+                            <constraint firstItem="DMP-TV-E2S" firstAttribute="top" secondItem="egW-M6-BfL" secondAttribute="bottom" constant="16" id="UOO-SZ-bpL"/>
+                            <constraint firstItem="8Sv-B6-WEo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Y1M-B9-pxN"/>
+                            <constraint firstItem="egW-M6-BfL" firstAttribute="top" secondItem="ciA-eS-2eE" secondAttribute="bottom" constant="16" id="gdl-QF-D9t"/>
+                            <constraint firstItem="ciA-eS-2eE" firstAttribute="top" secondItem="tlB-79-nIG" secondAttribute="bottom" constant="16" id="grv-Wh-8tl"/>
+                            <constraint firstItem="tlB-79-nIG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oIO-v0-uWv"/>
+                            <constraint firstItem="ciA-eS-2eE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="rT6-ik-KFr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ciA-eS-2eE" secondAttribute="trailing" constant="16" id="tUG-GO-aha"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="uUf-Ap-yLb"/>
+                    <connections>
+                        <outlet property="btnLab1" destination="bwg-NR-mqQ" id="DM9-7T-m1f"/>
+                        <outlet property="btnLab2" destination="uNp-BC-O8k" id="6dZ-of-v8s"/>
+                        <outlet property="btnNext" destination="DMP-TV-E2S" id="Zgw-yC-dsH"/>
+                        <outlet property="btnRadio" destination="tlB-79-nIG" id="D1i-uR-8sy"/>
+                        <outlet property="logTextView" destination="egW-M6-BfL" id="iH6-e6-BKd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.875" y="137.32394366197184"/>
+        </scene>
+        <!--Second Example View-->
+        <scene sceneID="ZFS-Pf-V7E">
+            <objects>
+                <viewController storyboardIdentifier="SecondExampleView" id="zwf-hR-WAv" customClass="SecondExampleView" customModule="RxPresentation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="umZ-LR-Nec">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hiR-2z-SrU">
+                                <rect key="frame" x="110" y="16" width="100" height="120.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bI5-yA-9dM">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <color key="tintColor" name="RxPurple"/>
+                                        <state key="normal" image="ic_signal">
+                                            <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <state key="highlighted" image="ic_signal_sel"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lab_1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VRt-eX-YL8">
+                                        <rect key="frame" x="0.0" y="100" width="100" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="DL3-w4-DSQ">
+                                <rect key="frame" x="25" y="178.5" width="270" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L0h-Rq-fc2">
+                                        <rect key="frame" x="0.0" y="0.0" width="122.5" height="100"/>
+                                        <color key="tintColor" name="RxPurple"/>
+                                        <state key="normal" image="ic_radio"/>
+                                        <state key="selected" image="ic_radio_sel"/>
+                                        <state key="highlighted" image="ic_radio_sel"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wgi-Xb-drM">
+                                        <rect key="frame" x="147.5" y="0.0" width="122.5" height="100"/>
+                                        <color key="tintColor" name="RxPurple"/>
+                                        <state key="normal" image="ic_radio"/>
+                                        <state key="selected" image="ic_radio_sel"/>
+                                        <state key="highlighted" image="ic_radio_sel"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5m6-08-xRB">
+                                <rect key="frame" x="252" y="514" width="52" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="ax4-b6-aaj"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <inset key="contentEdgeInsets" minX="16" minY="8" maxX="16" maxY="8"/>
+                                <state key="normal" image="forward.end.fill" catalog="system"/>
+                                <state key="highlighted">
+                                    <color key="titleColor" name="RxPurple"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Laboratory logs:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="67Z-ga-hjR">
+                                <rect key="frame" x="16" y="294.5" width="288" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hle-Jr-Ypp">
+                                <rect key="frame" x="16" y="331" width="288" height="167"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="DL3-w4-DSQ" firstAttribute="leading" secondItem="GGh-bX-HJl" secondAttribute="leading" constant="25" id="2Vt-bS-Gaa"/>
+                            <constraint firstItem="DL3-w4-DSQ" firstAttribute="top" secondItem="hiR-2z-SrU" secondAttribute="bottom" constant="42" id="5n9-T0-1RO"/>
+                            <constraint firstItem="67Z-ga-hjR" firstAttribute="leading" secondItem="GGh-bX-HJl" secondAttribute="leading" constant="16" id="6fJ-Jq-bbO"/>
+                            <constraint firstItem="hiR-2z-SrU" firstAttribute="centerX" secondItem="umZ-LR-Nec" secondAttribute="centerX" id="8jZ-eL-Wz0"/>
+                            <constraint firstItem="GGh-bX-HJl" firstAttribute="trailing" secondItem="67Z-ga-hjR" secondAttribute="trailing" constant="16" id="DCf-aC-fky"/>
+                            <constraint firstItem="5m6-08-xRB" firstAttribute="top" secondItem="hle-Jr-Ypp" secondAttribute="bottom" constant="16" id="Gkj-ne-YHg"/>
+                            <constraint firstItem="GGh-bX-HJl" firstAttribute="trailing" secondItem="hle-Jr-Ypp" secondAttribute="trailing" constant="16" id="JgI-oA-mad"/>
+                            <constraint firstItem="GGh-bX-HJl" firstAttribute="bottom" secondItem="5m6-08-xRB" secondAttribute="bottom" constant="16" id="OpD-io-GTd"/>
+                            <constraint firstItem="GGh-bX-HJl" firstAttribute="trailing" secondItem="5m6-08-xRB" secondAttribute="trailing" constant="16" id="Ufu-3H-jwP"/>
+                            <constraint firstItem="hiR-2z-SrU" firstAttribute="top" secondItem="GGh-bX-HJl" secondAttribute="top" constant="16" id="dya-ZL-7Ha"/>
+                            <constraint firstItem="hle-Jr-Ypp" firstAttribute="top" secondItem="67Z-ga-hjR" secondAttribute="bottom" constant="16" id="ffX-6F-9Ob"/>
+                            <constraint firstItem="DL3-w4-DSQ" firstAttribute="centerX" secondItem="umZ-LR-Nec" secondAttribute="centerX" id="mCK-sn-OOo"/>
+                            <constraint firstItem="hle-Jr-Ypp" firstAttribute="leading" secondItem="GGh-bX-HJl" secondAttribute="leading" constant="16" id="sXg-ba-SnL"/>
+                            <constraint firstItem="67Z-ga-hjR" firstAttribute="top" secondItem="DL3-w4-DSQ" secondAttribute="bottom" constant="16" id="zKh-Kr-vj1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="GGh-bX-HJl"/>
+                    </view>
+                    <connections>
+                        <outlet property="btnLab1" destination="bI5-yA-9dM" id="9JK-qZ-nVX"/>
+                        <outlet property="btnNext" destination="5m6-08-xRB" id="1b1-Fk-rdG"/>
+                        <outlet property="btnRadio1" destination="L0h-Rq-fc2" id="ZP8-dV-MsM"/>
+                        <outlet property="btnRadio2" destination="wgi-Xb-drM" id="jrs-hA-E7c"/>
+                        <outlet property="logTextView" destination="hle-Jr-Ypp" id="DCK-wu-903"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H7a-fS-zzS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="958" y="137"/>
+        </scene>
+        <!--Third Example View-->
+        <scene sceneID="dMC-0a-Om3">
+            <objects>
+                <viewController storyboardIdentifier="ThirdExampleView" id="EsE-n1-tX7" customClass="ThirdExampleView" customModule="RxPresentation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6ZD-Zo-VbF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="WVf-IE-qEB">
+                                <rect key="frame" x="8" y="16" width="304" height="120.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="UCW-pw-fwu">
+                                        <rect key="frame" x="0.0" y="0.0" width="96" height="120.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kx2-Gx-y1y">
+                                                <rect key="frame" x="0.0" y="0.0" width="96" height="100"/>
+                                                <color key="tintColor" name="RxPurple"/>
+                                                <state key="normal" image="ic_signal">
+                                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <state key="highlighted" image="ic_signal_sel"/>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lab_1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vhw-CP-4tP">
+                                                <rect key="frame" x="0.0" y="100" width="96" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="LGn-6q-y3M">
+                                        <rect key="frame" x="104" y="0.0" width="96" height="120.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DmF-ou-F6d">
+                                                <rect key="frame" x="0.0" y="0.0" width="96" height="100"/>
+                                                <color key="tintColor" name="RxPurple"/>
+                                                <state key="normal" image="ic_signal">
+                                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <state key="highlighted" image="ic_signal_sel"/>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lab_2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ne1-F6-Tnn">
+                                                <rect key="frame" x="0.0" y="100" width="96" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="9At-mj-9wP">
+                                        <rect key="frame" x="208" y="0.0" width="96" height="120.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m1h-iX-Dlq">
+                                                <rect key="frame" x="0.0" y="0.0" width="96" height="100"/>
+                                                <color key="tintColor" name="RxPurple"/>
+                                                <state key="normal" image="ic_signal">
+                                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <state key="highlighted" image="ic_signal_sel"/>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lab_3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o3C-bp-DT4">
+                                                <rect key="frame" x="0.0" y="100" width="96" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="3tm-2p-SFo">
+                                <rect key="frame" x="25" y="172.5" width="270" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3fy-Yu-EUp">
+                                        <rect key="frame" x="0.0" y="0.0" width="122.5" height="100"/>
+                                        <color key="tintColor" name="RxPurple"/>
+                                        <state key="normal" image="ic_radio"/>
+                                        <state key="selected" image="ic_radio_sel"/>
+                                        <state key="highlighted" image="ic_radio_sel"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GuL-Ow-9jS">
+                                        <rect key="frame" x="147.5" y="0.0" width="122.5" height="100"/>
+                                        <color key="tintColor" name="RxPurple"/>
+                                        <state key="normal" image="ic_radio"/>
+                                        <state key="selected" image="ic_radio_sel"/>
+                                        <state key="highlighted" image="ic_radio_sel"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Laboratory logs:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hiA-CD-Lag">
+                                <rect key="frame" x="16" y="288.5" width="288" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t3g-tL-Kmo">
+                                <rect key="frame" x="16" y="325" width="288" height="227"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L1y-nf-9JW">
+                                <rect key="frame" x="25" y="172.5" width="122.5" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="3tm-2p-SFo" firstAttribute="leading" secondItem="dHx-hH-i4U" secondAttribute="leading" constant="25" id="4o2-Ch-h23"/>
+                            <constraint firstItem="dHx-hH-i4U" firstAttribute="trailing" secondItem="hiA-CD-Lag" secondAttribute="trailing" constant="16" id="ROs-uh-k6z"/>
+                            <constraint firstItem="3tm-2p-SFo" firstAttribute="top" secondItem="WVf-IE-qEB" secondAttribute="bottom" constant="36" id="Rs5-Gt-kIw"/>
+                            <constraint firstItem="hiA-CD-Lag" firstAttribute="leading" secondItem="dHx-hH-i4U" secondAttribute="leading" constant="16" id="TiP-zX-mnQ"/>
+                            <constraint firstItem="3tm-2p-SFo" firstAttribute="top" secondItem="L1y-nf-9JW" secondAttribute="bottom" id="Tkv-Rx-fwL"/>
+                            <constraint firstItem="3tm-2p-SFo" firstAttribute="centerX" secondItem="6ZD-Zo-VbF" secondAttribute="centerX" id="cHg-3A-ZhO"/>
+                            <constraint firstItem="WVf-IE-qEB" firstAttribute="top" secondItem="dHx-hH-i4U" secondAttribute="top" constant="16" id="fAn-yy-GWD"/>
+                            <constraint firstItem="hiA-CD-Lag" firstAttribute="top" secondItem="3tm-2p-SFo" secondAttribute="bottom" constant="16" id="gpq-6f-MXR"/>
+                            <constraint firstItem="dHx-hH-i4U" firstAttribute="bottom" secondItem="t3g-tL-Kmo" secondAttribute="bottom" constant="16" id="lgr-cl-B1A"/>
+                            <constraint firstItem="t3g-tL-Kmo" firstAttribute="leading" secondItem="dHx-hH-i4U" secondAttribute="leading" constant="16" id="n3f-49-I44"/>
+                            <constraint firstItem="WVf-IE-qEB" firstAttribute="centerX" secondItem="6ZD-Zo-VbF" secondAttribute="centerX" id="oCK-cV-TbH"/>
+                            <constraint firstItem="t3g-tL-Kmo" firstAttribute="top" secondItem="hiA-CD-Lag" secondAttribute="bottom" constant="16" id="r3r-hh-jQy"/>
+                            <constraint firstItem="dHx-hH-i4U" firstAttribute="trailing" secondItem="t3g-tL-Kmo" secondAttribute="trailing" constant="16" id="rM9-70-q5k"/>
+                            <constraint firstItem="WVf-IE-qEB" firstAttribute="leading" secondItem="dHx-hH-i4U" secondAttribute="leading" constant="8" id="xXH-A3-0Pj"/>
+                            <constraint firstItem="L1y-nf-9JW" firstAttribute="leading" secondItem="3fy-Yu-EUp" secondAttribute="leading" id="xpb-qL-nWZ"/>
+                            <constraint firstItem="L1y-nf-9JW" firstAttribute="trailing" secondItem="3fy-Yu-EUp" secondAttribute="trailing" id="yfb-OV-KyI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dHx-hH-i4U"/>
+                    </view>
+                    <connections>
+                        <outlet property="btnLab1" destination="Kx2-Gx-y1y" id="CY6-2O-CIz"/>
+                        <outlet property="btnLab2" destination="DmF-ou-F6d" id="2ER-b1-k6O"/>
+                        <outlet property="btnLab3" destination="m1h-iX-Dlq" id="8G5-n4-1in"/>
+                        <outlet property="btnRadio1" destination="3fy-Yu-EUp" id="bVI-TR-a17"/>
+                        <outlet property="btnRadio2" destination="GuL-Ow-9jS" id="dEt-uy-SqS"/>
+                        <outlet property="labelRadio1" destination="L1y-nf-9JW" id="5GY-UO-7xP"/>
+                        <outlet property="logTextView" destination="t3g-tL-Kmo" id="J8l-Z8-4jJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TgQ-od-bq8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1835.625" y="136.26760563380282"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="forward.end.fill" catalog="system" width="128" height="102"/>
+        <image name="ic_radio" width="100" height="100"/>
+        <image name="ic_radio_sel" width="100" height="100"/>
+        <image name="ic_signal" width="100" height="100"/>
+        <image name="ic_signal_sel" width="100" height="100"/>
+        <namedColor name="RxPurple">
+            <color red="0.64313725490196083" green="0.1803921568627451" blue="0.52549019607843139" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-RxPresentation/Pods-RxPresentation-frameworks.sh
+${BUILT_PRODUCTS_DIR}/RxCocoa-framework/RxCocoa.framework
+${BUILT_PRODUCTS_DIR}/RxRelay-framework/RxRelay.framework
+${BUILT_PRODUCTS_DIR}/RxSwift-framework/RxSwift.framework

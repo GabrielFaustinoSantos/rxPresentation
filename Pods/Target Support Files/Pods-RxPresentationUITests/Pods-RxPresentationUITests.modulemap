@@ -1,0 +1,6 @@
+module Pods_RxPresentationUITests {
+  umbrella header "Pods-RxPresentationUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
